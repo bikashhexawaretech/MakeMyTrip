@@ -12,7 +12,16 @@ var facebookResponse='';
  
 app.post('/',function(req,res){
       if(req.body.result.action==='ActionIncident'){
-      
+        if(req.body.result.parameters.description=="")
+        {
+            var resagent='Please enter description';
+            return res.json({
+                speech:resagent,
+                displayText: resagent,
+                source:''
+              
+              });
+        }
       if(req.body.result.parameters.entityCategory=="")
       {
           console.log('Entry to Category');
