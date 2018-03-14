@@ -15,5 +15,9 @@
   "bugs": {
     "url": "https://github.com/bikashhexawaretech/MakeMyTrip/issues"
   },
-  "homepage": "https://github.com/bikashhexawaretech/MakeMyTrip#readme"
+  "homepage": "https://github.com/bikashhexawaretech/MakeMyTrip#readme",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.3"
+  }
 }
