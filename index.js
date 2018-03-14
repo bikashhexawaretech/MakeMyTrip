@@ -9,10 +9,7 @@ app.use(bodyParser.urlencoded({extended:true}));
 app.use(bodyParser.json());
 var fs = require("fs");
 
-app.get('/',function(req,res){
-console.log('Success');
-  
-})
+ 
  
  
 
