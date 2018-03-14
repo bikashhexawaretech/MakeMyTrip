@@ -88,6 +88,15 @@ app.post('/',function(req,res){
          }
          return res.json(facebookResponse);
       }
+     if( req.body.result.parameters.description!="" && req.body.result.parameters.entityCategory!="" && req.body.result.parameters.entitySeverity!=""){
+        var resagent='Incident Created Successfully';
+        return res.json({
+            speech:resagent,
+            displayText: resagent,
+            source:''
+          
+          });
+     }
     }
     });
  
