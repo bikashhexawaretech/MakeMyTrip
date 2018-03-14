@@ -1,0 +1,19 @@
+{
+  "name": "makemytrip",
+  "version": "1.0.0",
+  "description": "MakeMyTrip ",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bikashhexawaretech/MakeMyTrip.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bikashhexawaretech/MakeMyTrip/issues"
+  },
+  "homepage": "https://github.com/bikashhexawaretech/MakeMyTrip#readme"
+}
