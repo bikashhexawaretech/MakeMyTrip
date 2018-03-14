@@ -5,6 +5,7 @@ var express=require('express');
 var bodyParser = require('body-parser');
 var app = express();
 var portC = process.env.PORT || 3000;
+app.use(express.static('image'));
 app.use(bodyParser.urlencoded({extended:true}));
 app.use(bodyParser.json());
 var fs = require("fs");
@@ -66,7 +67,7 @@ app.post('/',function(req,res){
               "platform": "facebook",
               "title": "Select Urgency",
               "subtitle": "",
-              "imageUrl": "http://www.cromacampus.com/wp-content/uploads/2017/05/servicenow-tool-training.png",
+              "imageUrl": __dirname+'/image/brand.jpg',
               "buttons": [
                 {
                   "text": "High",
