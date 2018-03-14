@@ -13,8 +13,9 @@ var facebookResponse='';
 app.post('/',function(req,res){
       if(req.body.result.action==='ActionIncident'){
       
-      if(req.body.result.parameters.entityCategory==='')
+      if(req.body.result.parameters.entityCategory=="")
       {
+          console.log('Entry to Category');
         facebookResponse={
             "speech": "",
           "messages": [
@@ -45,8 +46,9 @@ app.post('/',function(req,res){
          }
          return res.json(facebookResponse);
       }
-      if(req.body.result.parameters.entitySeverity==='')
+      if(req.body.result.parameters.entitySeverity=="")
       {
+        console.log('Entry to severity');
         facebookResponse={
             "speech": "",
           "messages": [
